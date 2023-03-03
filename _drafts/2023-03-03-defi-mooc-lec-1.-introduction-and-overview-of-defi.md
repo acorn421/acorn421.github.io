@@ -3,8 +3,9 @@ title: DeFI MOOC Lec 1. Introduction and Overview of DeFI
 description: ""
 date: 2023-03-03T07:13:47.436Z
 preview: ""
-tags: "DeFI, Smart Contract, DeFI MOOC"
-categories: ""
+tags: DeFI, Smart Contract, DeFI MOOC
+categories: DeFI
+lastmod: 2023-03-03T07:35:06.692Z
 ---
 
 [![Introduction and Overview of DeFI image](https://slid-users-assets-v1-seoul.s3.ap-northeast-2.amazonaws.com/public/capture_images/929e1436a8204156a5435a850731c8c0/51895a9f-7c56-43c7-9a25-d63f14249927.png)](https://app.slid.cc/vdocs/929e1436a8204156a5435a850731c8c0?v=a1e04c0546b64a5f833c86abb906e134&start=28.737236952316284)
