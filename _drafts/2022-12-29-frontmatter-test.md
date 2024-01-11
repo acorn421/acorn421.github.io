@@ -3,8 +3,9 @@ title: How to Get and Evaluate Startup Ideas
 description: ""
 date: 2022-12-30T01:52:20.865Z
 preview: ""
-tags: "startup, startup_idea, ycombinator"
+tags: startup, startup_idea, ycombinator
 categories: ""
+lastmod: 2024-01-11T06:57:55.001Z
 ---
 
 ## 4 most common mistakes

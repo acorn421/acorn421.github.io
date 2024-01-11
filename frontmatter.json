@@ -3,7 +3,7 @@
   "frontMatter.taxonomy.contentTypes": [
     {
       "name": "default",
-      "filePrefix" : "yyyy-MM-dd",
+      "filePrefix": "yyyy-MM-dd",
       "pageBundle": false,
       "previewPath": null,
       "fields": [
@@ -62,12 +62,6 @@
       "title": "_drafts",
       "path": "[[workspace]]/_drafts"
     }
-  ],
-  "frontMatter.taxonomy.tags": [
-    "TEST"
-  ],
-  "frontMatter.taxonomy.categories": [
-    "TEST"
   ],
   "frontMatter.content.autoUpdateDate": true,
   "frontMatter.content.fmHighlight": true,
