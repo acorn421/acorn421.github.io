@@ -2,7 +2,7 @@
 title: About Youngjoon Kim (김영준)
 icon: fas fa-info-circle
 order: 1
-lastmod: 2024-01-11T06:51:17.174Z
+lastmod: 2024-01-12T11:12:12.339Z
 ---
 
 <!-- |<img width=200/>|<img width=500/> |
@@ -10,7 +10,8 @@ lastmod: 2024-01-11T06:51:17.174Z
 |Contact | CV |
 | [Email](mailto:acorn421@gmail.com) / [Telegram](https://t.me/acorn421) / [Linkedin](https://linkedin.com/in/acorn421/) / [Github](https://github.com/acorn421) | [CV(Long)](/assets/pdf/cv_kim_long.pdf) / [CV(Short)](/assets/pdf/cv_kim_short.pdf)| -->
 
-| <img src="/assets/img/profile.jpg"> | [Email](mailto:acorn421@gmail.com) / [Telegram](https://t.me/acorn421) / [Linkedin](https://linkedin.com/in/acorn421/) / [Github](https://github.com/acorn421) <br> [CV(Long)](/assets/pdf/cv_kim_long.pdf) / [CV(Short)](/assets/pdf/cv_kim_short.pdf)|
+| <img src="/assets/img/profile.jpg"> 
+| [Email](mailto:acorn421@gmail.com) / [Telegram](https://t.me/acorn421) / [Linkedin](https://linkedin.com/in/acorn421/) / [Github](https://github.com/acorn421) <br> [CV(Long)](/assets/pdf/cv_kim_long.pdf) / [CV(Short)](/assets/pdf/cv_kim_short.pdf)|
 
 # Summary
 I am a **captain of the R.O.K. Army** and a **Ph.D. student at Korea
