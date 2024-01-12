@@ -2,7 +2,7 @@
 title: About Youngjoon Kim (김영준)
 icon: fas fa-info-circle
 order: 1
-lastmod: 2024-01-12T11:12:12.339Z
+lastmod: 2024-01-12T11:15:28.952Z
 ---
 
 <!-- |<img width=200/>|<img width=500/> |
@@ -110,6 +110,7 @@ vulnerabilities in **smart contracts**.
 | **Korea University**            | **Sep. 2018 – Present** |
 |:----------------------------------|--------------------------:|
 | *Ph.D. in Information Security* |          *Seoul, Korea* |
+| Advisor: Prof. Jiwon Yoon       | [Website](https://signal.korea.ac.kr) |
 
 |:----------------------------------|--------------------------:|
 | **Korea University**    | **Mar. 2013 – Feb. 2017** |
