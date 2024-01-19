@@ -54,7 +54,7 @@ build() {
   # gem env
   # bundle env
 
-  export GEM_HOME=bundle env | grep "Gem Home" | awk '{print $3}'
+  GEM_HOME=`bundle env | grep "Gem Home" | awk '{print $3}'`
 
   ls $GEM_HOME
 
