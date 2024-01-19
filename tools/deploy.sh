@@ -51,6 +51,12 @@ build() {
     rm -rf "$SITE_DIR"
   fi
 
+  # install
+  bundle install
+
+  # patch
+  sed -i "s/layout: default/layout: default\npannel_includes:\n- toc/g" $GEM_HOME/gems/jekyll-theme-chirpy-5.2.0/_layouts/page.html
+
   # build
   JEKYLL_ENV=production bundle exec jekyll b -d "$SITE_DIR$_baseurl" --config "$_config"
 }

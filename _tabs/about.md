@@ -1,8 +1,9 @@
 ---
 title: About Youngjoon Kim (김영준)
+toc: true
 icon: fas fa-info-circle
 order: 1
-lastmod: 2024-01-12T11:15:28.952Z
+lastmod: 2024-01-19T02:27:27.790Z
 ---
 
 <!-- |<img width=200/>|<img width=500/> |
@@ -10,10 +11,10 @@ lastmod: 2024-01-12T11:15:28.952Z
 |Contact | CV |
 | [Email](mailto:acorn421@gmail.com) / [Telegram](https://t.me/acorn421) / [Linkedin](https://linkedin.com/in/acorn421/) / [Github](https://github.com/acorn421) | [CV(Long)](/assets/pdf/cv_kim_long.pdf) / [CV(Short)](/assets/pdf/cv_kim_short.pdf)| -->
 
-| <img src="/assets/img/profile.jpg"> 
+| <img src="/assets/img/profile.jpg">
 | [Email](mailto:acorn421@gmail.com) / [Telegram](https://t.me/acorn421) / [Linkedin](https://linkedin.com/in/acorn421/) / [Github](https://github.com/acorn421) <br> [CV(Long)](/assets/pdf/cv_kim_long.pdf) / [CV(Short)](/assets/pdf/cv_kim_short.pdf)|
 
-# Summary
+## Summary
 I am a **captain of the R.O.K. Army** and a **Ph.D. student at Korea
 University**. I have experience in both security research and security
 engineering while working at **ADD** and **R.O.K. Cyber Operations
@@ -24,7 +25,7 @@ AI-assisted **fuzzing**. Practically, I am interested in AI-assisted
 **penetration testing**. Recently, I started researching on finding
 vulnerabilities in **smart contracts**.
 
-# Work Experience
+## Work Experience
 
 |<img width=200/>|<img width=500/>
 |:-----------------------------------|------------------------:|
@@ -104,7 +105,7 @@ vulnerabilities in **smart contracts**.
     AWS, Google Analytics
 -    Language: Python, Javascript, Node.js
 
-# Education
+## Education
 
 |:----------------------------------|--------------------------:|
 | **Korea University**            | **Sep. 2018 – Present** |
@@ -122,7 +123,7 @@ vulnerabilities in **smart contracts**.
 |:----------------------------------|--------------------------:|
 |                                 |           *Seoul, Korea* |
 
-# Publications
+## Publications
 
 -    **SCVMON: Data-oriented attack recovery for RVs based on
     safety-critical variable monitoring.** \\
@@ -146,7 +147,7 @@ vulnerabilities in **smart contracts**.
     **Youngjoon Kim** and Jiwon Yoon \\
     Electronics, 2020
 
-# Domestic Patents
+## Domestic Patents
 
 -    **DEVICE AND METHOD FOR DATA-ORIENTED ATTACK DETECTION AND RECOVERY
     FOR ROBOTIC VEHICLES BASED ON SAFETY-CRITICAL VARIABLES
@@ -159,7 +160,7 @@ vulnerabilities in **smart contracts**.
     Kyeongsik Lee, **Youngjoon Kim**, Younggi Park, and Hojun Lee \\
     Korean Patent 10-2344497-0000, 2021
 
-# Other Experiences
+## Other Experiences
 
 |<img width=200/>|<img width=500/>|
 |:---------------------------------|--------------------------------:|
@@ -173,7 +174,7 @@ vulnerabilities in **smart contracts**.
 |<img width=200/>|<img width=500/>|
 |:---------------|-------------------------------------------:|
 | **SW Maestro** |                  **Jun. 2015 – Dec. 2015** |
-| *Developer*    | *Sponsored by Ministry of Science and ICT* |
+| *Developer*    | *Sponsored by Ministry of Science and IC* |
 
 <!-- **Matnam** \\
 *Sep. 2015 – Dec. 2015*
@@ -232,7 +233,7 @@ vulnerabilities in **smart contracts**.
 -    Framework: Android SDK, sqlite
 -    Language: Java -->
 
-# Skills
+## Skills
 
 - **Programming Languages**: Proficient - C/C++, Python, Java, Occasional - Java, JavaScript, Node.js, R, Solidity, Rust
 - **Cloud Platforms**: *AWS*, Google Cloud
