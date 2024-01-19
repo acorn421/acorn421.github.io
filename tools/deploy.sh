@@ -52,9 +52,9 @@ build() {
   fi
 
   # gem env
-  bundle env
+  # bundle env
 
-  GEM_HOME=`bundle env | grep "Gem Home" | awk '{print $3}'`
+  GEM_HOME="/home/runner/work/acorn421.github.io/acorn421.github.io/vendor/bundle"
 
   ls $GEM_HOME
   ls $GEM_HOME/gems
