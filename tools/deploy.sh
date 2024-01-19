@@ -51,6 +51,10 @@ build() {
     rm -rf "$SITE_DIR"
   fi
 
+  gem env
+
+  bundle env
+
   # patch
   sed -i "s/layout: default/layout: default\npannel_includes:\n- toc/g" ./vendor/bundle/gems/jekyll-theme-chirpy-5.2.0/_layouts/page.html
 
