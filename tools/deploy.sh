@@ -56,8 +56,8 @@ build() {
 
   GEM_HOME="/home/runner/work/acorn421.github.io/acorn421.github.io/vendor/bundle/ruby/2.7.0"
 
-  ls $GEM_HOME
-  ls $GEM_HOME/gems
+  # ls $GEM_HOME
+  # ls $GEM_HOME/gems
 
   # patch
   sed -i "s/layout: default/layout: default\npannel_includes:\n- toc/g" $GEM_HOME/gems/jekyll-theme-chirpy-5.2.0/_layouts/page.html
