@@ -54,7 +54,7 @@ build() {
   # gem env
   # bundle env
 
-  GEM_HOME="/home/runner/work/acorn421.github.io/acorn421.github.io/vendor/bundle"
+  GEM_HOME="/home/runner/work/acorn421.github.io/acorn421.github.io/vendor/bundle/ruby/2.7.0"
 
   ls $GEM_HOME
   ls $GEM_HOME/gems
