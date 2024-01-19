@@ -52,11 +52,12 @@ build() {
   fi
 
   # gem env
-  # bundle env
+  bundle env
 
   GEM_HOME=`bundle env | grep "Gem Home" | awk '{print $3}'`
 
   ls $GEM_HOME
+  ls $GEM_HOME/gems
 
   # patch
   sed -i "s/layout: default/layout: default\npannel_includes:\n- toc/g" $GEM_HOME/gems/jekyll-theme-chirpy-5.2.0/_layouts/page.html
