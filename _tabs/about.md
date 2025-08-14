@@ -3,7 +3,7 @@ title: About Youngjoon Kim (김영준)
 toc: true
 icon: fas fa-info-circle
 order: 1
-lastmod: 2025-08-14T18:04:23.354Z
+lastmod: 2025-08-14T18:11:48.031Z
 ---
 
 <!-- |<img width=200/>|<img width=500/> |
@@ -19,17 +19,17 @@ I am a postdoctoral researcher at Georgia Tech, conducting research on AI-driven
 
 ## Work Experience
 
-|<img width=200/>|<img width=500/>
+|<img width=200/>|<img width=500/>|
 |:-----------------------------------|------------------------:|
 | **Georgia Tech** | **Aug. 2025 – Present** |
 | *Postdoctoral Researcher*                |          *Atlanta, USA* |
 
-|<img width=200/>|<img width=500/>
+|<img width=200/>|<img width=500/>|
 |:-----------------------------------|------------------------:|
 | **Korea University** | **June. 2025 – Aug. 2025** |
 | *Postdoctoral Researcher*                |          *Seoul, Korea* |
 
-|<img width=200/>|<img width=500/>
+|<img width=200/>|<img width=500/>|
 |:-----------------------------------|------------------------:|
 | **R.O.K. Cyber Operation Command** | **Oct. 2022 – Present** |
 | *Security Engineer*                |          *Seoul, Korea* |
