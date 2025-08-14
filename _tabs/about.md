@@ -3,7 +3,7 @@ title: About Youngjoon Kim (김영준)
 toc: true
 icon: fas fa-info-circle
 order: 1
-lastmod: 2024-01-19T02:27:27.790Z
+lastmod: 2025-08-14T17:59:12.134Z
 ---
 
 <!-- |<img width=200/>|<img width=500/> |
@@ -12,22 +12,22 @@ lastmod: 2024-01-19T02:27:27.790Z
 | [Email](mailto:acorn421@gmail.com) / [Telegram](https://t.me/acorn421) / [Linkedin](https://linkedin.com/in/acorn421/) / [Github](https://github.com/acorn421) | [CV(Long)](/assets/pdf/cv_kim_long.pdf) / [CV(Short)](/assets/pdf/cv_kim_short.pdf)| -->
 
 | <img src="/assets/img/profile.jpg">
-| [Email](mailto:acorn421@gmail.com) / [Telegram](https://t.me/acorn421) / [Linkedin](https://linkedin.com/in/acorn421/) / [Github](https://github.com/acorn421) <br> [CV(Long)](/assets/pdf/cv_kim_long.pdf) / [CV(Short)](/assets/pdf/cv_kim_short.pdf)|
+| [Email](mailto:acorn421@gmail.com) / [Telegram](https://t.me/acorn421) / [Linkedin](https://linkedin.com/in/acorn421/) / [Github](https://github.com/acorn421) <br> [CV](/assets/pdf/cv_kim.pdf) |
 
 ## Summary
-I am a **captain of the R.O.K. Army** and a **Ph.D. student at Korea
-University**. I have experience in both security research and security
-engineering while working at **ADD** and **R.O.K. Cyber Operations
-Command**. Throughout my career, my main focus has been the
-**integration of AI and security**. In particular, I would like to apply
-AI to offensive security. To this end, academically, I am interested in
-AI-assisted **fuzzing**. Practically, I am interested in AI-assisted
-**penetration testing**. Recently, I started researching on finding
-vulnerabilities in **smart contracts**.
+I am a postdoctoral researcher at Georgia Tech, conducting research on AI-driven vulnerability discovery and patching. I received my Ph.D. in Computer Science from Korea University under the supervision of Professor Jiwon Yoon. Previously, I served as a captain in the R.O.K. Army and worked at the Agency for Defense Development (ADD) and the R.O.K. Cyber Operations Command, gaining experience in both security research and security engineering.
 
 ## Work Experience
 
 |<img width=200/>|<img width=500/>
+|:-----------------------------------|------------------------:|
+| **Georgia Tech** | **Aug. 2025 – Present** |
+| *Postdoctoral Researcher*                |          *Atlanta, USA* |
+
+|:-----------------------------------|------------------------:|
+| **Korea University** | **June. 2025 – Aug. 2025** |
+| *Postdoctoral Researcher*                |          *Seoul, Korea* |
+
 |:-----------------------------------|------------------------:|
 | **R.O.K. Cyber Operation Command** | **Oct. 2022 – Present** |
 | *Security Engineer*                |          *Seoul, Korea* |
@@ -124,6 +124,16 @@ vulnerabilities in **smart contracts**.
 |                                 |           *Seoul, Korea* |
 
 ## Publications
+
+- **Logs In, Patches Out: Automated Vulnerability Repair via Tree-of-Thought LLM Analysis.** \\
+  **Youngjoon Kim**, Sunguk Shin, Hyoungshick Kim\* , and Jiwon Yoon\* \\
+  \* *Corresponding authors* \\
+  USENIX Security, 2025
+
+- **Enhancing Graph Of Thought: Enhancing Prompts with LLM Rationales and Dynamic Temperature Control.** \\
+  Sunguk Shin and **Youngjoon Kim\*** \\
+  \* *Corresponding author* \\
+  International Conference on Learning Representations (ICLR), 2025
 
 -    **SCVMON: Data-oriented attack recovery for RVs based on
     safety-critical variable monitoring.** \\
