@@ -1,10 +1,10 @@
 cv:
   name: Youngjoon Kim
   label: Postdoctoral Researcher
-  email: acorn421@gmail.com
+  email: youngjoon.kim@gatech.edu
   location: Atlanta, GA, USA
   image: ""
-  summary: A postdoctoral researcher at Georgia Tech, conducting research on AI-driven vulnerability discovery and patching.
+  summary: A postdoctoral researcher at SSLab, Georgia Tech, working on AI-driven automated vulnerability discovery and repair via Cyber Reasoning Systems (CRS). Security researcher at Team Atlanta (AIxCC Winner).
 
   social_networks:
     - network: GitHub
@@ -27,6 +27,7 @@ cv:
         end_date: 2025-02
         highlights:
           - "Advisor: Prof. Jiwon Yoon (https://signal.korea.ac.kr)"
+          - "Thesis: AI-Driven Automated Vulnerability Discovery and Repair"
 
       - institution: Korea University
         location: Seoul, Korea
@@ -47,36 +48,38 @@ cv:
       - company: Georgia Institute of Technology
         position: Postdoctoral Researcher
         location: Atlanta, USA
-        start_date: 2025-08
+        start_date: 2025-09
         end_date: present
-        summary: Research on AI-driven vulnerability discovery and patching.
+        summary: "SSLab, School of Cybersecurity and Privacy. Supervisor: Prof. Taesoo Kim."
+        highlights:
+          - Research on AI-driven automated vulnerability discovery and repair via Cyber Reasoning Systems (CRS).
 
       - company: Korea University
         position: Postdoctoral Researcher
         location: Seoul, Korea
         start_date: 2025-06
         end_date: 2025-08
+        summary: "Supervisor: Prof. Jiwon Yoon."
 
       - company: R.O.K. Cyber Operations Command
-        position: Security Engineer
+        position: Security Engineer (R.O.K. Army Captain)
         location: Seoul, Korea
         start_date: 2022-10
-        end_date: 2025-06
+        end_date: 2024-05
         highlights:
           - Performed vulnerability assessments for R.O.K. military IT infrastructure.
           - Worked as a red team during R.O.K. military cyber operation exercises.
+          - Analyzed North Korea's cyberattack techniques and simulated similar attack scenarios for cybersecurity training.
           - Conducted cybersecurity management ability assessment for public institutions in South Korea.
-          - "Keywords: Red team, Web hacking, Reverse engineering, Binary exploitation, APT attack"
-          - "Frameworks/Tools: Metasploit, Burp suite, IDA, WinDBG, Cobalt strike, Nmap, Python, C/C++, Powershell"
 
       - company: Agency for Defense Development (ADD)
-        position: Security Researcher
+        position: Security Researcher (R.O.K. Army Captain)
         location: Seoul, Korea
         start_date: 2017-07
         end_date: 2022-09
         highlights:
-          - "Research on national-level cyberattack defense technologies (Jan. 2021 – Sep. 2022): organized adversaries' cyberattack operations into attack chains, predicted the next attack using Bayesian network and MITRE ATT&CK, and implemented network/host-level automatic defense using SDN."
-          - "Research on techniques for evaluating binary fuzzing results (Jan. 2018 – Oct. 2020): developed Linux-based taint analysis tool for Windows x64 and introduced crash triage technique using additional directed fuzzing and taint analysis."
+          - "Research on national-level cyberattack defense technologies (Jan. 2021 – Sep. 2022): developed a predictive model for next-stage attacks using Bayesian network and MITRE ATT&CK; implemented network-level and host-level automatic defense using SDN."
+          - "Research on techniques for evaluating binary fuzzing results (Jan. 2018 – Oct. 2020): ported a taint analysis framework from Linux to Windows x64; developed a crash triage technique combining directed fuzzing and taint analysis."
           - "Research on cyber threat analysis and countermeasures for warship systems (Jul. 2017 – Dec. 2017): conducted threat analysis and proposed countermeasures for R.O.K. navy warship information systems based on NIST standards."
 
       - company: Plain Bagel, Inc
@@ -86,6 +89,27 @@ cv:
         end_date: 2017-02
         highlights:
           - "Slidee: built a web-based editor and sharing platform for YouTube video stills (React, Redux, Express.js, MongoDB, ELK stack, AWS)."
+
+    Competitions & Projects:
+      - company: OSS-CRS
+        position: Main Contributor
+        location: Georgia Tech
+        start_date: 2025-09
+        end_date: present
+        summary: Liberating AIxCC cyber reasoning systems for real-world open-source security (https://github.com/sslab-gatech/oss-crs).
+
+      - company: DARPA AI Cyber Challenge (AIxCC) Final — 1st Place
+        position: Member of Team Atlanta
+        location: ""
+        start_date: 2024-12
+        end_date: 2025-08
+        summary: Our CRS found 43 vulnerabilities including 6 zero-days, winning the AIxCC Finals.
+
+      - company: DARPA AI Cyber Challenge (AIxCC) Semi-final
+        position: Tech Leader of Team KORIA
+        location: ""
+        start_date: 2024-04
+        end_date: 2024-08
 
     Patents:
       - title: DEVICE AND METHOD FOR DATA-ORIENTED ATTACK DETECTION AND RECOVERY FOR ROBOTIC VEHICLES BASED ON SAFETY-CRITICAL VARIABLES MONITORING

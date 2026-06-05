@@ -2,6 +2,14 @@
   url: https://www.usenix.org/conference/usenixsecurity25
   color: "#aa1d22"
 
+"WOOT":
+  url: https://www.usenix.org/conference/woot26
+  color: "#e07b00"
+
+"arXiv":
+  url: https://arxiv.org/
+  color: "#b31b1b"
+
 "ICLR":
   url: https://iclr.cc/
   color: "#21568b"

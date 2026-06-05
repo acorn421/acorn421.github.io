@@ -8,12 +8,13 @@ middle_name:
 last_name: Kim
 contact_note:
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Personal website of Youngjoon Kim, a postdoctoral researcher at Georgia Tech working on
-  AI-driven vulnerability discovery and patching.
+  Personal website of Youngjoon Kim, a postdoctoral researcher at SSLab, Georgia Tech, working on
+  AI-driven automated vulnerability discovery and repair via Cyber Reasoning Systems (CRS).
+  Member of Team Atlanta, winner of the DARPA AI Cyber Challenge (AIxCC).
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-keywords: security, fuzzing, vulnerability discovery, automated program repair, LLM, Youngjoon Kim, Georgia Tech # add your own keywords or leave empty
+keywords: security, fuzzing, vulnerability discovery, automated program repair, LLM, cyber reasoning system, AIxCC, Team Atlanta, Youngjoon Kim, Georgia Tech # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: 🌰 # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
