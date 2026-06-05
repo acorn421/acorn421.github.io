@@ -1,0 +1,139 @@
+cv:
+  name: Youngjoon Kim
+  label: Postdoctoral Researcher
+  email: acorn421@gmail.com
+  location: Atlanta, GA, USA
+  image: ""
+  summary: A postdoctoral researcher at Georgia Tech, conducting research on AI-driven vulnerability discovery and patching.
+
+  social_networks:
+    - network: GitHub
+      username: acorn421
+    - network: LinkedIn
+      username: acorn421
+    - network: X
+      username: acorn4214
+    - network: Telegram
+      username: acorn421
+
+  sections:
+    Education:
+      - institution: Korea University
+        location: Seoul, Korea
+        url: https://korea.ac.kr/
+        area: Information Security
+        studyType: PhD
+        start_date: 2018-09
+        end_date: 2025-02
+        highlights:
+          - "Advisor: Prof. Jiwon Yoon (https://signal.korea.ac.kr)"
+
+      - institution: Korea University
+        location: Seoul, Korea
+        url: https://korea.ac.kr/
+        area: Cyber Defense
+        studyType: BS
+        start_date: 2013-03
+        end_date: 2017-02
+
+      - institution: Hansung Science High School
+        location: Seoul, Korea
+        area: Science
+        studyType: Diploma
+        start_date: 2011-03
+        end_date: 2013-02
+
+    Experience:
+      - company: Georgia Institute of Technology
+        position: Postdoctoral Researcher
+        location: Atlanta, USA
+        start_date: 2025-08
+        end_date: present
+        summary: Research on AI-driven vulnerability discovery and patching.
+
+      - company: Korea University
+        position: Postdoctoral Researcher
+        location: Seoul, Korea
+        start_date: 2025-06
+        end_date: 2025-08
+
+      - company: R.O.K. Cyber Operations Command
+        position: Security Engineer
+        location: Seoul, Korea
+        start_date: 2022-10
+        end_date: 2025-06
+        highlights:
+          - Performed vulnerability assessments for R.O.K. military IT infrastructure.
+          - Worked as a red team during R.O.K. military cyber operation exercises.
+          - Conducted cybersecurity management ability assessment for public institutions in South Korea.
+          - "Keywords: Red team, Web hacking, Reverse engineering, Binary exploitation, APT attack"
+          - "Frameworks/Tools: Metasploit, Burp suite, IDA, WinDBG, Cobalt strike, Nmap, Python, C/C++, Powershell"
+
+      - company: Agency for Defense Development (ADD)
+        position: Security Researcher
+        location: Seoul, Korea
+        start_date: 2017-07
+        end_date: 2022-09
+        highlights:
+          - "Research on national-level cyberattack defense technologies (Jan. 2021 – Sep. 2022): organized adversaries' cyberattack operations into attack chains, predicted the next attack using Bayesian network and MITRE ATT&CK, and implemented network/host-level automatic defense using SDN."
+          - "Research on techniques for evaluating binary fuzzing results (Jan. 2018 – Oct. 2020): developed Linux-based taint analysis tool for Windows x64 and introduced crash triage technique using additional directed fuzzing and taint analysis."
+          - "Research on cyber threat analysis and countermeasures for warship systems (Jul. 2017 – Dec. 2017): conducted threat analysis and proposed countermeasures for R.O.K. navy warship information systems based on NIST standards."
+
+      - company: Plain Bagel, Inc
+        position: Full Stack Developer (Part-time)
+        location: Seoul, Korea
+        start_date: 2015-03
+        end_date: 2017-02
+        highlights:
+          - "Slidee: built a web-based editor and sharing platform for YouTube video stills (React, Redux, Express.js, MongoDB, ELK stack, AWS)."
+
+    Patents:
+      - title: DEVICE AND METHOD FOR DATA-ORIENTED ATTACK DETECTION AND RECOVERY FOR ROBOTIC VEHICLES BASED ON SAFETY-CRITICAL VARIABLES MONITORING
+        authors:
+          - Sangbin Park
+          - Youngjoon Kim
+          - Donghun Lee
+        date: 2023
+        summary: Korean Patent 10-2023-0157140 (application number), in review.
+
+      - title: SOFTWARE TAINT ANALYSIS METHOD AND SOFTWARE TAINT ANALYSIS DEVICE USING THE SAME
+        authors:
+          - Kyeongsik Lee
+          - Youngjoon Kim
+          - Younggi Park
+          - Hojun Lee
+        date: 2021
+        summary: Korean Patent 10-2344497-0000.
+
+    Other Experiences:
+      - company: 1-day Vulnerability Analysis (Sponsored by Korea University)
+        position: Student Intern
+        location: Seoul, Korea
+        start_date: 2019-04
+        end_date: 2021-11
+
+      - company: SW Maestro (Sponsored by Ministry of Science and ICT)
+        position: Developer
+        location: Seoul, Korea
+        start_date: 2015-06
+        end_date: 2015-12
+
+      - company: Android Malware Analysis (Sponsored by KISA)
+        position: Student Intern
+        location: Seoul, Korea
+        start_date: 2014-03
+        end_date: 2014-12
+
+      - company: SGen Club (Sponsored by Samsung SDS)
+        position: Developer
+        location: Seoul, Korea
+        start_date: 2012-07
+        end_date: 2014-06
+
+    Skills:
+      - name: Programming Languages
+        keywords: "Proficient: C/C++, Python, Java / Occasional: JavaScript, Node.js, R, Solidity, Rust"
+      - name: Cloud Platforms
+        keywords: "AWS, Google Cloud"
+      - name: Frameworks/Tools
+        keywords: "AFL, Pintool, Burp suite, IDA, WinDBG, PyTorch, TensorFlow, React, Git, MongoDB"
