@@ -16,5 +16,3 @@ output/playwright/
 test-results/
 vendor
 
-# reference materials (separate repo)
-refer/
