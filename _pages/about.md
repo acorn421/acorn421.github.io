@@ -3,11 +3,11 @@ layout: about
 title: about
 permalink: /
 subtitle: >
-  Postdoctoral Researcher, <a href='https://gts3.org/'>SSLab</a>, School of Cybersecurity and Privacy, <a href='https://www.gatech.edu/'>Georgia Tech</a> ·
-  Security Researcher at <a href='https://team-atlanta.github.io/'>Team Atlanta</a> (<b>AIxCC Winner</b>)
+  Postdoctoral Researcher, <a href='https://gts3.org/'>SSLab</a>, School of Cybersecurity and Privacy, Georgia Tech ·
+  Security Researcher at <a href='https://team-atlanta.github.io/'>Team Atlanta</a> (AIxCC Winner)
 
 profile:
-  align: right
+  align: left
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
@@ -27,10 +27,10 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am a postdoctoral researcher at [SSLab](https://gts3.org/), School of Cybersecurity and Privacy, [Georgia Tech](https://www.gatech.edu/), working with Professor [Taesoo Kim](https://taesoo.kim/). My research focuses on **AI-driven automated vulnerability discovery and repair** via **Cyber Reasoning Systems (CRS)**, combining LLMs with program analysis techniques.
+I am a postdoctoral researcher at [SSLab](https://gts3.org/), School of Cybersecurity and Privacy, Georgia Tech, working with Professor [Taesoo Kim](https://taesoo.kim/). My research focuses on AI-driven automated vulnerability discovery and repair via Cyber Reasoning Systems (CRS), combining LLMs with program analysis techniques.
 
-As a member of [Team Atlanta](https://team-atlanta.github.io/), I won **1st place in the DARPA AI Cyber Challenge (AIxCC) Finals**, where our CRS found 43 vulnerabilities including 6 zero-days. I am currently a main contributor to [OSS-CRS](https://github.com/sslab-gatech/oss-crs), liberating AIxCC cyber reasoning systems for real-world open-source security.
+As a member of [Team Atlanta](https://team-atlanta.github.io/), I won 1st place in the DARPA AI Cyber Challenge (AIxCC) Finals, where our CRS found 43 vulnerabilities including 6 zero-days. I am currently a main contributor to OSS-CRS, liberating AIxCC cyber reasoning systems for real-world open-source security.
 
-I received my Ph.D. in Information Security from [Korea University](https://korea.ac.kr) under the supervision of Professor [Jiwon Yoon](https://signal.korea.ac.kr) (Thesis: _AI-Driven Automated Vulnerability Discovery and Repair_). Previously, I served as a captain in the R.O.K. Army, working at the Agency for Defense Development (ADD) and the R.O.K. Cyber Operations Command, gaining experience in both security research and security engineering.
+I received my Ph.D. in Information Security from Korea University under the supervision of Professor Jiwon Yoon (Thesis: AI-Driven Automated Vulnerability Discovery and Repair). Previously, I served as a captain in the R.O.K. Army, working at the Agency for Defense Development (ADD) and the R.O.K. Cyber Operations Command, gaining experience in both security research and security engineering.
 
-My research interests include **fuzzing**, **automated program repair**, **LLM-based security analysis**, and **offensive security**.
+My research interests include fuzzing, automated program repair, LLM-based security analysis, and offensive security.
