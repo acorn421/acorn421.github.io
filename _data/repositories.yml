@@ -4,4 +4,6 @@ github_users:
 repo_description_lines_max: 2
 
 github_repos:
+  - sslab-gatech/oss-crs
+  - sslab-gatech/CRSBench
   - acorn421/acorn421.github.io
