@@ -2,31 +2,29 @@
 layout: default
 ---
 <style>
-  /* Name on the left (large) with the role/subtitle to its right */
+  /* Name and role/subtitle both centered, CV-style */
   .about-header {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: baseline;
-    gap: 0.3rem 1.25rem;
-    margin-bottom: 1.5rem;
+    text-align: center;
+    margin-bottom: 1.75rem;
   }
   .about-header .post-title {
-    font-size: 3rem;
+    font-size: 3.6rem;
     line-height: 1.1;
-    margin: 0;
-    white-space: nowrap;
+    margin: 0 0 0.5rem;
   }
   .about-header .desc {
-    flex: 1 1 300px;
-    margin: 0;
-    font-size: 1rem;
-    line-height: 1.4;
+    margin: 0 auto;
+    max-width: 820px;
+    font-size: 1.25rem;
+    line-height: 1.5;
     color: var(--global-text-color-light);
   }
   @media (max-width: 576px) {
     .about-header .post-title {
-      font-size: 2.4rem;
-      white-space: normal;
+      font-size: 2.7rem;
+    }
+    .about-header .desc {
+      font-size: 1.1rem;
     }
   }
 
@@ -83,6 +81,16 @@ layout: default
     transition-property: all 0.2s ease-in-out;
   }
   .about-top .profile-social .contact-icons a:hover i::before {
+    color: var(--global-theme-color);
+  }
+
+  /* "More publications" link under the selected list */
+  .more-publications {
+    text-align: right;
+    margin-top: 0.25rem;
+    font-weight: 600;
+  }
+  .more-publications a {
     color: var(--global-theme-color);
   }
 
@@ -148,7 +156,7 @@ layout: default
     <!-- News -->
     {% if page.announcements and page.announcements.enabled %}
       <h2>
-        <a href="{{ '/news/' | relative_url }}" style="color: inherit">news</a>
+        <a href="{{ '/news/' | relative_url }}" style="color: inherit">News</a>
       </h2>
       {% include news.liquid limit=true %}
     {% endif %}
@@ -164,9 +172,12 @@ layout: default
     <!-- Selected papers -->
     {% if page.selected_papers %}
       <h2>
-        <a href="{{ '/publications/' | relative_url }}" style="color: inherit">selected publications</a>
+        <a href="{{ '/publications/' | relative_url }}" style="color: inherit">Publications</a>
       </h2>
       {% include selected_papers.liquid %}
+      <p class="more-publications">
+        <a href="{{ '/publications/' | relative_url }}">More publications &rarr;</a>
+      </p>
     {% endif %}
 
     {% if site.contact_note %}
