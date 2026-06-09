@@ -9,11 +9,11 @@ nav_order: 5
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta http-equiv="refresh" content="0; url={{ '/assets/pdf/cv_kim.pdf' | relative_url }}" />
-    <link rel="canonical" href="{{ '/assets/pdf/cv_kim.pdf' | relative_url }}" />
+    <meta http-equiv="refresh" content="0; url={{ '/assets/pdf/cv_kim.pdf' | relative_url | bust_file_cache }}" />
+    <link rel="canonical" href="{{ '/assets/pdf/cv_kim.pdf' | relative_url | bust_file_cache }}" />
     <title>CV</title>
   </head>
   <body>
-    <p>Redirecting to <a href="{{ '/assets/pdf/cv_kim.pdf' | relative_url }}">CV (PDF)</a>…</p>
+    <p>Redirecting to <a href="{{ '/assets/pdf/cv_kim.pdf' | relative_url | bust_file_cache }}">CV (PDF)</a>…</p>
   </body>
 </html>
