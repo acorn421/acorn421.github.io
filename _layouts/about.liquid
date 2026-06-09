@@ -40,8 +40,18 @@ layout: default
     width: 250px;
     max-width: 100%;
   }
+  .about-top .profile-col figure,
+  .about-top .profile-col picture {
+    width: 100%;
+    margin: 0;
+    display: block;
+  }
+  /* Crop the wide original into a tall portrait (trim left/right, extend vertically) */
   .about-top .profile-col img {
     width: 100%;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+    object-position: center;
   }
   .about-top .about-overview {
     flex: 1 1 340px;
