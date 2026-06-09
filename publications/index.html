@@ -1,0 +1,249 @@
+<!DOCTYPE html> <html lang="en"> <head> <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <script>
+      (function () {
+        try {
+          var t = localStorage.getItem("theme");
+          if (t !== "dark" && t !== "light" && t !== "system") {
+            localStorage.setItem("theme", "dark");
+          }
+        } catch (e) {}
+      })();
+    </script> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <title> Publications | Youngjoon Kim </title> <meta name="author" content="Youngjoon Kim"> <meta name="description" content="Personal website of Youngjoon Kim, a postdoctoral researcher at SSLab, Georgia Tech, working on AI-driven automated vulnerability discovery and repair via Cyber Reasoning Systems (CRS). Member of Team Atlanta, winner of the DARPA AI Cyber Challenge (AIxCC). "> <meta name="keywords" content="security, fuzzing, vulnerability discovery, automated program repair, LLM, cyber reasoning system, AIxCC, Team Atlanta, Youngjoon Kim, Georgia Tech"> <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https:; font-src 'self' data: https:; media-src 'self' https:; frame-src 'self' https:; connect-src 'self' https:;"> <style>
+  :root {
+    --max-content-width: 930px;
+  }
+</style> <link rel="stylesheet" href="/assets/css/tailwind.css?v=50c64c15cbb9fd1ce6056fdb8bcb4b62"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/all.min.css" integrity="sha256-MVopmdyC2tYTiJ8wlktf0uh0v4NgT+vNdyVFepi7Q0c=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.5/css/academicons.min.css" integrity="sha256-SzrCOBJbGVFMahewkgjwnApaV2+av1DwMAA+/QGLyZw=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/scholar-icons@1.0.3/css/scholar-icons.css" integrity="sha256-VY3hHVj/hNX3fYG6wtbA6TcKJQl7+FthzGSyIB64klY=" crossorigin="anonymous"> <link defer rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&amp;display=swap"> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-github.css?v=591dab5a4e56573bf4ef7fd332894c99" media="" id="highlight_theme_light"> <link rel="shortcut icon" href="/assets/img/favicons/favicon.ico?v=b2d61dc48465d1b593fa041d72445b20"> <link rel="stylesheet" href="/assets/css/main.css?v=f0b101217084a90093badfe99ff9a7d1"> <link rel="canonical" href="https://youngjoon.kim/publications/"> <script src="/assets/js/theme.js?v=7af685e2ba20b37fef545c97b8064050"></script> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-native.css?v=5847e5ed4a4568527aa6cfab446049ca" media="none" id="highlight_theme_dark"> <script>
+    initTheme();
+  </script> <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicons/apple-touch-icon.png"> <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicons/favicon-32x32.png"> <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png"> <link rel="mask-icon" href="/assets/img/favicons/safari-pinned-tab.svg" color="#5b8dd9"> <link rel="preconnect" href="https://fonts.googleapis.com"> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,300..800;1,14..32,300..700&amp;display=swap" rel="stylesheet"> <style>
+      :root {
+        --site-font: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      }
+      body,
+      .post-title,
+      .navbar,
+      .navbar .nav-link,
+      .desc,
+      h1, h2, h3, h4, h5, h6 {
+        font-family: var(--site-font);
+      }
+      /* Larger top navbar menu */
+      #navbar .navbar-nav .nav-item .nav-link {
+        font-size: 1.35rem;
+      }
+      #navbar .navbar-brand {
+        font-size: 1.6rem;
+      }
+      /* Steel Navy accent (light) */
+      html[data-theme="light"] {
+        --global-theme-color: #2b4c7e;
+        --global-hover-color: #2b4c7e;
+      }
+      /* Steel Navy accent (dark) + softer, less-deep gray background */
+      html[data-theme="dark"] {
+        --global-theme-color: #5b8dd9;
+        --global-hover-color: #5b8dd9;
+        --global-bg-color: #26282c;
+        --global-card-bg-color: #303338;
+        --global-code-bg-color: #2f3338;
+        --global-divider-color: #3c3f45;
+      }
+    </style> </head> <body class="fixed-top-nav "> <header> <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation"> <div class="container"> <a class="navbar-brand title font-weight-lighter" href="/"> Youngjoon Kim </a> <button class="navbar-toggler collapsed navbar-toggler-main" type="button" data-nav-toggle="navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span class="icon-bar bottom-bar"></span> </button> <div class="collapse navbar-collapse navbar-collapse-main" id="navbarNav"> <ul class="navbar-nav navbar-menu-list flex-nowrap"> <li class="nav-item "> <a class="nav-link" href="/">About </a> </li> <li class="nav-item active"> <a class="nav-link" href="/publications/">Publications <span class="sr-only">(current)</span> </a> </li> <li class="nav-item "> <a class="nav-link" href="/repositories/">Repositories </a> </li> <li class="nav-item "> <a class="nav-link" href="/cv/">CV </a> </li> <li class="nav-item"> <button id="search-toggle" type="button" title="Search" aria-label="Open search"> <span class="nav-link">ctrl k <i class="fa-solid fa-magnifying-glass"></i></span> </button> </li> <li class="toggle-container"> <button id="light-toggle" type="button" title="Change theme" aria-label="Change color theme"> <i class="fa-half-sun-moon" id="light-toggle-system"></i> <i class="fa-solid fa-moon" id="light-toggle-dark"></i> <i class="fa-solid fa-sun" id="light-toggle-light"></i> </button> </li> </ul> </div> </div> </nav> <progress id="progress" value="0"> <div class="progress-container"> <span class="progress-bar"></span> </div> </progress> </header> <div class="container mt-5" role="main"> <div class="post"> <header class="post-header"> <h1 class="post-title">Publications</h1> <p class="post-description"></p> </header> <article> <style>
+  /* Section headings (Conference Papers / Journal Articles / Preprints):
+     left-aligned and bright so they stand out on the dark background */
+  .publications h2.bibliography {
+    text-align: left;
+    color: var(--global-text-color);
+  }
+
+  /* CV-style numbering: C1.., J1.., P1.. matching the CV.
+     In the CV the oldest paper is #1, so the labels count DOWN from the top
+     (newest first). counter-reset is set to (count + 1) per section. */
+  .pub-conf ol.bibliography {
+    counter-reset: pub 6; /* number of conference papers + 1 */
+  }
+  .pub-jour ol.bibliography {
+    counter-reset: pub 4; /* number of journal articles + 1 */
+  }
+  .pub-pre ol.bibliography {
+    counter-reset: pub 2; /* number of preprints + 1 */
+  }
+  .publications ol.bibliography > li {
+    counter-increment: pub -1;
+  }
+  .pub-conf ol.bibliography > li .title::before {
+    content: "[C" counter(pub) "] ";
+    font-weight: bolder;
+    margin-right: 0.2rem;
+  }
+  .pub-jour ol.bibliography > li .title::before {
+    content: "[J" counter(pub) "] ";
+    font-weight: bolder;
+    margin-right: 0.2rem;
+  }
+  .pub-pre ol.bibliography > li .title::before {
+    content: "[P" counter(pub) "] ";
+    font-weight: bolder;
+    margin-right: 0.2rem;
+  }
+</style> <div class="publications"> <div class="pub-conf"> <h2 class="bibliography">Conference Papers</h2> <ol class="bibliography"> <li> <div class="row"> <div class="col col-sm-2 abbr"> <abbr class="badge rounded w-100" style="background-color:#aa1d22"> <div>SEC</div> </abbr> </div> <div id="zhang2026sok" class="col-sm-8"> <div class="title">SoK: DARPA’s AI Cyber Challenge (AIxCC): Competition Design, Architectures, and Lessons Learned</div> <div class="author"> Cen Zhang, Younggi Park, Fabian Fleischer, and <span class="more-authors" title="click to view 18 more authors" onclick=" var element=this; element.setAttribute('title', ''); var more_authors_text=element.textContent == '18 more authors' ? 'Yu-Fu Fu, Jiho Kim, Dongkwan Kim, Youngjoon Kim, Qingxiao Xu, Andrew Chin, Ze Sheng, Hanqing Zhao, Michael Pelican, David J. Musliner, Jeff Huang, Jon Silliman, Mikel Mcdaniel, Jefferson Casavant, Isaac Goldthwaite, Nicholas Vidovich, Matthew Lehman, Taesoo Kim' : '18 more authors'; var cursorPosition=0; var textAdder=setInterval(function(){ element.innerHTML = more_authors_text.substring(0, cursorPosition + 1); if (++cursorPosition == more_authors_text.length){ clearInterval(textAdder); } }, '10'); ">18 more authors</span> </div> <div class="periodical"> <em>In 35th USENIX Security Symposium (USENIX Security 26)</em>. To appear , 2026 </div> <div class="periodical"> </div> <div class="links"> <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a> <a href="/assets/pdf/2026_SoK_AIxCC.pdf" class="btn btn-sm z-depth-0" role="button">PDF</a> </div> <div class="bibtex hidden"> <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">zhang2026sok</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{SoK: DARPA's AI Cyber Challenge (AIxCC): Competition Design, Architectures, and Lessons Learned}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Zhang, Cen and Park, Younggi and Fleischer, Fabian and Fu, Yu-Fu and Kim, Jiho and Kim, Dongkwan and Kim, Youngjoon and Xu, Qingxiao and Chin, Andrew and Sheng, Ze and Zhao, Hanqing and Pelican, Michael and Musliner, David J. and Huang, Jeff and Silliman, Jon and Mcdaniel, Mikel and Casavant, Jefferson and Goldthwaite, Isaac and Vidovich, Nicholas and Lehman, Matthew and Kim, Taesoo}</span><span class="p">,</span>
+  <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{35th USENIX Security Symposium (USENIX Security 26)}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2026}</span><span class="p">,</span>
+<span class="p">}</span></code></pre></figure> </div> </div> </div> </li> <li> <div class="row"> <div class="col col-sm-2 abbr"> <abbr class="badge rounded w-100" style="background-color:#aa1d22"> <div>WOOT</div> </abbr> </div> <div id="chin2026osscrs" class="col-sm-8"> <div class="title">OSS-CRS: Liberating AIxCC Cyber Reasoning Systems for Real-World Open-Source Security</div> <div class="author"> Andrew Chin, Dongkwan Kim, Yu-Fu Fu, and <span class="more-authors" title="click to view 7 more authors" onclick=" var element=this; element.setAttribute('title', ''); var more_authors_text=element.textContent == '7 more authors' ? 'Fabian Fleischer, Youngjoon Kim, HyungSeok Han, Cen Zhang, Brian Junekyu Lee, Hanqing Zhao, Taesoo Kim' : '7 more authors'; var cursorPosition=0; var textAdder=setInterval(function(){ element.innerHTML = more_authors_text.substring(0, cursorPosition + 1); if (++cursorPosition == more_authors_text.length){ clearInterval(textAdder); } }, '10'); ">7 more authors</span> </div> <div class="periodical"> <em>In 20th USENIX WOOT Conference on Offensive Technologies (WOOT 26)</em>. To appear , 2026 </div> <div class="periodical"> </div> <div class="links"> <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a> <a href="/assets/pdf/2026_OSS_CRS.pdf" class="btn btn-sm z-depth-0" role="button">PDF</a> <a href="https://github.com/sslab-gatech/oss-crs" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Code</a> </div> <div class="bibtex hidden"> <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">chin2026osscrs</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{OSS-CRS: Liberating AIxCC Cyber Reasoning Systems for Real-World Open-Source Security}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Chin, Andrew and Kim, Dongkwan and Fu, Yu-Fu and Fleischer, Fabian and Kim, Youngjoon and Han, HyungSeok and Zhang, Cen and Lee, Brian Junekyu and Zhao, Hanqing and Kim, Taesoo}</span><span class="p">,</span>
+  <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{20th USENIX WOOT Conference on Offensive Technologies (WOOT 26)}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2026}</span><span class="p">,</span>
+<span class="p">}</span></code></pre></figure> </div> </div> </div> </li> <li> <div class="row"> <div class="col col-sm-2 abbr"> <abbr class="badge rounded w-100" style="background-color:#aa1d22"> <div>SEC</div> </abbr> </div> <div id="kim2025logs" class="col-sm-8"> <div class="title">Logs In, Patches Out: Automated Vulnerability Repair via Tree-of-Thought LLM Analysis</div> <div class="author"> <em>Youngjoon Kim</em>, Sunguk Shin, Hyoungshick Kim, and <span class="more-authors" title="click to view 1 more author" onclick=" var element=this; element.setAttribute('title', ''); var more_authors_text=element.textContent == '1 more author' ? 'Jiwon Yoon' : '1 more author'; var cursorPosition=0; var textAdder=setInterval(function(){ element.innerHTML = more_authors_text.substring(0, cursorPosition + 1); if (++cursorPosition == more_authors_text.length){ clearInterval(textAdder); } }, '10'); ">1 more author</span> </div> <div class="periodical"> <em>In 34th USENIX Security Symposium (USENIX Security 25)</em>. Hyoungshick Kim and Jiwon Yoon are corresponding authors , 2025 </div> <div class="periodical"> </div> <div class="links"> <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a> <a href="/assets/pdf/2025_LogsInPatchesOut.pdf" class="btn btn-sm z-depth-0" role="button">PDF</a> </div> <div class="bibtex hidden"> <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">kim2025logs</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{Logs In, Patches Out: Automated Vulnerability Repair via Tree-of-Thought LLM Analysis}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Kim, Youngjoon and Shin, Sunguk and Kim, Hyoungshick and Yoon, Jiwon}</span><span class="p">,</span>
+  <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{34th USENIX Security Symposium (USENIX Security 25)}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2025}</span><span class="p">,</span>
+<span class="p">}</span></code></pre></figure> </div> </div> </div> </li> <li> <div class="row"> <div class="col col-sm-2 abbr"> <abbr class="badge rounded w-100" style="background-color:#21568b"> <div>ICLR</div> </abbr> </div> <div id="shin2025enhancing" class="col-sm-8"> <div class="title">Enhancing Graph of Thought: Enhancing Prompts with LLM Rationales and Dynamic Temperature Control</div> <div class="author"> Sunguk Shin and <em>Youngjoon Kim</em> </div> <div class="periodical"> <em>In International Conference on Learning Representations (ICLR)</em>. Youngjoon Kim is the corresponding author , 2025 </div> <div class="periodical"> </div> <div class="links"> <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a> <a href="/assets/pdf/2025_EnhancingGoT.pdf" class="btn btn-sm z-depth-0" role="button">PDF</a> </div> <div class="bibtex hidden"> <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">shin2025enhancing</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{Enhancing Graph of Thought: Enhancing Prompts with LLM Rationales and Dynamic Temperature Control}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Shin, Sunguk and Kim, Youngjoon}</span><span class="p">,</span>
+  <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{International Conference on Learning Representations (ICLR)}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2025}</span><span class="p">,</span>
+<span class="p">}</span></code></pre></figure> </div> </div> </div> </li> <li> <div class="row"> <div class="col col-sm-2 abbr"> <abbr class="badge rounded w-100" style="background-color:#aa1d22"> <div>RAID</div> </abbr> </div> <div id="park2023scvmon" class="col-sm-8"> <div class="title">SCVMON: Data-oriented attack recovery for RVs based on safety-critical variable monitoring</div> <div class="author"> Sangbin Park, <em>Youngjoon Kim</em>, and Donghoon Lee </div> <div class="periodical"> <em>In Proceedings of the 26th International Symposium on Research in Attacks, Intrusions and Defenses (RAID)</em>, 2023 </div> <div class="periodical"> </div> <div class="links"> <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a> <a href="/assets/pdf/2023_SCVMON.pdf" class="btn btn-sm z-depth-0" role="button">PDF</a> </div> <div class="bibtex hidden"> <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">park2023scvmon</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{SCVMON: Data-oriented attack recovery for RVs based on safety-critical variable monitoring}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Park, Sangbin and Kim, Youngjoon and Lee, Donghoon}</span><span class="p">,</span>
+  <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{Proceedings of the 26th International Symposium on Research in Attacks, Intrusions and Defenses (RAID)}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2023}</span><span class="p">,</span>
+<span class="p">}</span></code></pre></figure> </div> </div> </div> </li> </ol> </div> <div class="pub-jour"> <h2 class="bibliography">Journal Articles</h2> <ol class="bibliography"> <li> <div class="row"> <div class="col col-sm-2 abbr"> <abbr class="badge rounded w-100" style="background-color:#6c757d"> <div>IEEE Access</div> </abbr> </div> <div id="kim2023ban" class="col-sm-8"> <div class="title">BAN: Predicting APT Attack Based on Bayesian Network With MITRE ATT&amp;CK Framework</div> <div class="author"> <em>Youngjoon Kim</em>, Insup Lee, Hyuk Kwon, and <span class="more-authors" title="click to view 2 more authors" onclick=" var element=this; element.setAttribute('title', ''); var more_authors_text=element.textContent == '2 more authors' ? 'Gyeongsik Lee, Jiwon Yoon' : '2 more authors'; var cursorPosition=0; var textAdder=setInterval(function(){ element.innerHTML = more_authors_text.substring(0, cursorPosition + 1); if (++cursorPosition == more_authors_text.length){ clearInterval(textAdder); } }, '10'); ">2 more authors</span> </div> <div class="periodical"> <em>IEEE Access</em>, 2023 </div> <div class="periodical"> </div> <div class="links"> <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a> <a href="/assets/pdf/2023_BAN.pdf" class="btn btn-sm z-depth-0" role="button">PDF</a> </div> <div class="bibtex hidden"> <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">kim2023ban</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{BAN: Predicting APT Attack Based on Bayesian Network With MITRE ATT&amp;CK Framework}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Kim, Youngjoon and Lee, Insup and Kwon, Hyuk and Lee, Gyeongsik and Yoon, Jiwon}</span><span class="p">,</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{IEEE Access}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2023}</span><span class="p">,</span>
+<span class="p">}</span></code></pre></figure> </div> </div> </div> </li> <li> <div class="row"> <div class="col col-sm-2 abbr"> <abbr class="badge rounded w-100" style="background-color:#21568b"> <div>PRL</div> </abbr> </div> <div id="shin2021new" class="col-sm-8"> <div class="title">A new approach to training more interpretable model with additional segmentation</div> <div class="author"> Sunguk Shin, <em>Youngjoon Kim</em>, and Jiwon Yoon </div> <div class="periodical"> <em>Pattern Recognition Letters</em>, 2021 </div> <div class="periodical"> </div> <div class="links"> <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a> </div> <div class="bibtex hidden"> <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">shin2021new</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{A new approach to training more interpretable model with additional segmentation}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Shin, Sunguk and Kim, Youngjoon and Yoon, Jiwon}</span><span class="p">,</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{Pattern Recognition Letters}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2021}</span><span class="p">,</span>
+<span class="p">}</span></code></pre></figure> </div> </div> </div> </li> <li> <div class="row"> <div class="col col-sm-2 abbr"> <abbr class="badge rounded w-100" style="background-color:#6c757d"> <div>Electronics</div> </abbr> </div> <div id="kim2020maxafl" class="col-sm-8"> <div class="title">MaxAFL: Maximizing code coverage with a gradient-based optimization technique</div> <div class="author"> <em>Youngjoon Kim</em> and Jiwon Yoon </div> <div class="periodical"> <em>Electronics</em>, 2020 </div> <div class="periodical"> </div> <div class="links"> <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a> <a href="/assets/pdf/2020_Maxafl.pdf" class="btn btn-sm z-depth-0" role="button">PDF</a> </div> <div class="bibtex hidden"> <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">kim2020maxafl</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{MaxAFL: Maximizing code coverage with a gradient-based optimization technique}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Kim, Youngjoon and Yoon, Jiwon}</span><span class="p">,</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{Electronics}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2020}</span><span class="p">,</span>
+<span class="p">}</span></code></pre></figure> </div> </div> </div> </li> </ol> </div> <div class="pub-pre"> <h2 class="bibliography">Preprints</h2> <ol class="bibliography"><li> <div class="row"> <div class="col col-sm-2 abbr"> <abbr class="badge rounded w-100" style="background-color:#6c757d"> <div>arXiv</div> </abbr> </div> <div id="kim2025atlantis" class="col-sm-8"> <div class="title">ATLANTIS: AI-driven Threat Localization, Analysis, and Triage Intelligence System</div> <div class="author"> Taesoo Kim and others </div> <div class="periodical"> 2025 </div> <div class="periodical"> </div> <div class="links"> <a href="http://arxiv.org/abs/2509.14589" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arXiv</a> <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a> </div> <div class="bibtex hidden"> <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@misc</span><span class="p">{</span><span class="nl">kim2025atlantis</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{ATLANTIS: AI-driven Threat Localization, Analysis, and Triage Intelligence System}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Kim, Taesoo and others}</span><span class="p">,</span>
+  <span class="na">howpublished</span> <span class="p">=</span> <span class="s">{arXiv preprint arXiv:2509.14589}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2025}</span><span class="p">,</span>
+<span class="p">}</span></code></pre></figure> </div> </div> </div> </li></ol> </div> </div> </article> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Youngjoon Kim. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. </div> </footer> <script>
+  window.alFolio = {
+    compatBootstrap: false
+  };
+</script> <script src="/assets/js/nav-toggle.js?v=141bd79a73ebc0f0b6ea58e440ae79fc"></script> <script defer src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script> <script defer src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script> <script defer src="/assets/js/masonry.js?v=e49affc7bd2646f6acdad1dbe02c2359" type="text/javascript"></script> <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js" integrity="sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI=" crossorigin="anonymous"></script> <script src="/assets/al_math/js/mathjax-setup.js"></script> <script defer src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6" crossorigin="anonymous"></script> <script src="/assets/js/tooltips-setup.js?v=fe487e99db6c43751e6e7bdb2d6a0611"></script> <script src="/assets/js/no_defer.js?v=53b1b1a645525975c963ce8bf8bfefcf"></script> <script defer src="/assets/js/common.js?v=87baac90f765f2f3362dcf6aaf312a8a"></script> <script defer src="/assets/js/copy_code.js?v=c8a01c11a92744d44b093fc3bda915df" type="text/javascript"></script> <script defer src="/assets/js/jupyter_new_tab.js?v=896d254890d9b47f0281f63bfccf0dee"></script> <script async src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script> <script async src="https://badge.dimensions.ai/badge.js"></script> <script async src="https://www.googletagmanager.com/gtag/js?id=G-KMNLTF6RB9"></script> <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    window.dataLayer.push(arguments);
+  }
+  gtag("js", new Date());
+  gtag("config", "G-KMNLTF6RB9");
+</script> <script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/dist/medium-zoom.min.js" integrity="sha256-ZgMyDAIYDYGxbcpJcfUnYwNevG/xi9OHKaR/8GK+jWc=" crossorigin="anonymous"></script> <script defer src="/assets/al_img_tools/js/zoom.js"></script> <script defer src="/assets/js/progress-bar.js?v=499464c5c63ced6cf7ad62509f1e2610" type="text/javascript"></script> <script src="https://cdn.jsdelivr.net/npm/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js" integrity="sha256-uMJJ3EoTyfRBoTbR+lrfu1uRQ87RZG8AR3cVNuQVeFg=" crossorigin="anonymous"></script> <script>
+    addBackToTop();
+  </script> <script type="module" src="/assets/al_search/js/search/ninja-keys.min.js"></script> <ninja-keys hidebreadcrumbs noautoloadmdicons placeholder="Type to start searching"></ninja-keys> <script src="/assets/al_search/js/search-setup.js"></script> <script>
+// get the ninja-keys element
+const ninja = document.querySelector('ninja-keys');
+
+// add the home and posts menu items
+ninja.data = [{
+    id: "nav-about",
+    title: "About",
+    section: "Navigation",
+    handler: () => {
+      window.location.href = "/";
+    },
+  },{id: "nav-publications",
+          title: "Publications",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/publications/";
+          },
+        },{id: "nav-repositories",
+          title: "Repositories",
+          description: "A selection of open-source projects I contribute to.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/repositories/";
+          },
+        },{id: "nav-cv",
+          title: "CV",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/cv/";
+          },
+        },{id: "news-our-paper-on-graph-of-thought-prompting-was-accepted-to-iclr-2025-tada",
+          title: 'Our paper on Graph of Thought prompting was accepted to ICLR 2025! <img class="emoji" title=":tada:" alt=":tada:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f389.png" height="20" width="20">...',
+          description: "",
+          section: "News",},{id: "news-our-paper-logs-in-patches-out-automated-vulnerability-repair-via-tree-of-thought-llm-analysis-was-accepted-to-usenix-security-2025-tada",
+          title: 'Our paper “Logs In, Patches Out: Automated Vulnerability Repair via Tree-of-Thought LLM Analysis”...',
+          description: "",
+          section: "News",},{id: "news-team-atlanta-won-1st-place-in-the-darpa-ai-cyber-challenge-aixcc-finals-our-crs-found-43-vulnerabilities-including-6-zero-days-trophy",
+          title: 'Team Atlanta won 1st place in the DARPA AI Cyber Challenge (AIxCC) Finals!...',
+          description: "",
+          section: "News",},{id: "news-our-paper-oss-crs-was-accepted-to-usenix-woot-2026-tada",
+          title: 'Our paper OSS-CRS was accepted to USENIX WOOT 2026! <img class="emoji" title=":tada:" alt=":tada:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f389.png" height="20" width="20">',
+          description: "",
+          section: "News",},{id: "news-our-paper-sok-darpa-s-ai-cyber-challenge-was-accepted-to-usenix-security-2026-tada",
+          title: 'Our paper SoK: DARPA’s AI Cyber Challenge was accepted to USENIX Security 2026!...',
+          description: "",
+          section: "News",},{
+        id: 'social-cv',
+        title: 'CV',
+        section: 'Socials',
+        handler: () => {
+          window.open("/assets/pdf/cv_public.pdf", "_blank");
+        },
+      },{
+        id: 'social-email',
+        title: 'email',
+        section: 'Socials',
+        handler: () => {
+          window.open("mailto:%79%6F%75%6E%67%6A%6F%6F%6E.%6B%69%6D@%67%61%74%65%63%68.%65%64%75", "_blank");
+        },
+      },{
+        id: 'social-github',
+        title: 'GitHub',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://github.com/acorn421", "_blank");
+        },
+      },{
+        id: 'social-linkedin',
+        title: 'LinkedIn',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://www.linkedin.com/in/acorn421", "_blank");
+        },
+      },{
+      id: 'light-theme',
+      title: 'Change theme to light',
+      description: 'Change the theme of the site to Light',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("light");
+      },
+    },
+    {
+      id: 'dark-theme',
+      title: 'Change theme to dark',
+      description: 'Change the theme of the site to Dark',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("dark");
+      },
+    },
+    {
+      id: 'system-theme',
+      title: 'Use system default theme',
+      description: 'Change the theme of the site to System Default',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("system");
+      },
+    },];
+
+</script> <script src="/assets/al_search/js/shortcut-key.js"></script> </body> </html>

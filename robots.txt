@@ -1,5 +1,4 @@
 User-agent: *
+Disallow:
 
-Disallow: /norobots/
-
-Sitemap: https://acorn421.github.io/sitemap.xml
+Sitemap: https://youngjoon.kim/sitemap.xml
