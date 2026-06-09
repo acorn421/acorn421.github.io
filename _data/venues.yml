@@ -1,0 +1,31 @@
+# Venue badge colors are grouped by category:
+#   Security venues -> red (#aa1d22)
+#   AI/ML venues    -> blue (#21568b)
+#   Neutral (journals / preprints) -> gray (#6c757d)
+
+# --- Security ---
+"SEC":
+  color: "#aa1d22"
+
+"WOOT":
+  color: "#aa1d22"
+
+"RAID":
+  color: "#aa1d22"
+
+# --- AI / ML ---
+"ICLR":
+  color: "#21568b"
+
+"PRL":
+  color: "#21568b"
+
+# --- Neutral (journals / preprints) ---
+"IEEE Access":
+  color: "#6c757d"
+
+"Electronics":
+  color: "#6c757d"
+
+"arXiv":
+  color: "#6c757d"

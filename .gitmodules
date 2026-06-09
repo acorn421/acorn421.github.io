@@ -1,3 +1,3 @@
-[submodule "assets/lib"]
-	path = assets/lib
-	url = https://github.com/cotes2020/chirpy-static-assets.git
+[submodule "refer/youngjoon_kim"]
+	path = refer/youngjoon_kim
+	url = https://github.com/acorn421/youngjoon_kim

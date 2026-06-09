@@ -1,0 +1,205 @@
+---
+layout: default
+---
+<style>
+  /* Name and role/subtitle both centered, CV-style */
+  .about-header {
+    text-align: center;
+    margin-bottom: 1.75rem;
+  }
+  .about-header .post-title {
+    font-size: 3.6rem;
+    line-height: 1.1;
+    margin: 0 0 0.5rem;
+  }
+  .about-header .desc {
+    margin: 0 auto;
+    max-width: 820px;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    color: var(--global-text-color-light);
+  }
+  @media (max-width: 576px) {
+    .about-header .post-title {
+      font-size: 2.7rem;
+    }
+    .about-header .desc {
+      font-size: 1.1rem;
+    }
+  }
+
+  .about-top {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem 2rem;
+    align-items: flex-start;
+    margin-bottom: 1.5rem;
+  }
+  .about-top .profile-col {
+    flex: 0 0 auto;
+    width: 250px;
+    max-width: 100%;
+  }
+  .about-top .profile-col figure,
+  .about-top .profile-col picture {
+    width: 100%;
+    margin: 0;
+    display: block;
+  }
+  /* Crop the wide original into a tall portrait (trim left/right, extend vertically) */
+  .about-top .profile-col img {
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+    object-position: center;
+  }
+  .about-top .about-overview {
+    flex: 1 1 340px;
+    min-width: 0;
+  }
+  .about-top .about-overview > :first-child {
+    margin-top: 0;
+  }
+  .about-top .more-info {
+    margin-top: 0.6rem;
+    font-size: 0.85rem;
+    line-height: 1.4;
+    text-align: center;
+    color: var(--global-text-color-light);
+  }
+  /* small social icons right under the photo */
+  .about-top .profile-social {
+    margin-top: 0.6rem;
+    padding-top: 0.6rem;
+    border-top: 1px solid var(--global-divider-color);
+  }
+  .about-top .profile-social .contact-icons {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+  .about-top .profile-social .contact-icons a {
+    margin: 0 0.4rem;
+  }
+  .about-top .profile-social .contact-icons a img,
+  .about-top .profile-social .contact-icons a svg {
+    width: 1.4rem;
+    height: 1.4rem;
+    margin-bottom: 0;
+  }
+  .about-top .profile-social .contact-icons a i::before {
+    color: var(--global-text-color);
+    transition-property: all 0.2s ease-in-out;
+  }
+  .about-top .profile-social .contact-icons a:hover i::before {
+    color: var(--global-theme-color);
+  }
+
+  /* "More publications" link under the selected list */
+  .more-publications {
+    text-align: right;
+    margin-top: 0.25rem;
+    font-weight: 600;
+  }
+  .more-publications a {
+    color: var(--global-theme-color);
+  }
+
+  /* On mobile: stack with the photo first */
+  @media (max-width: 576px) {
+    .about-top {
+      flex-direction: column;
+    }
+    .about-top .profile-col {
+      width: 100%;
+      max-width: 280px;
+      margin: 0 auto;
+    }
+  }
+</style>
+
+<div class="post">
+  <header class="post-header about-header">
+    <h1 class="post-title">
+      {% if site.title == 'blank' %}
+        <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }}
+        {{ site.last_name }}
+      {% else %}
+        {{ site.title }}
+      {% endif %}
+    </h1>
+    {% if page.subtitle %}
+      <p class="desc">{{ page.subtitle }}</p>
+    {% endif %}
+  </header>
+
+  <article>
+    <div class="about-top">
+      {% if page.profile %}
+        <div class="profile-col">
+          {% if page.profile.image %}
+            {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
+            {% if page.profile.image_circular %}
+              {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
+            {% else %}
+              {% assign profile_image_class = 'img-fluid z-depth-1 rounded' %}
+            {% endif %}
+            {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3 }}px, (min-width: 576px) 30vw, 95vw"{% endcapture %}
+            {%
+              include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=page.profile.image
+              cache_bust=true
+            %}
+          {% endif %}
+          {% if page.profile.more_info %}
+            <div class="more-info">{{ page.profile.more_info }}</div>
+          {% endif %}
+          {% if page.social %}
+            <div class="profile-social">
+              <div class="contact-icons">{% social_links %}</div>
+            </div>
+          {% endif %}
+        </div>
+      {% endif %}
+
+      <div class="about-overview">{{ content }}</div>
+    </div>
+
+    <!-- News -->
+    {% if page.announcements and page.announcements.enabled %}
+      <h2>
+        <a href="{{ '/news/' | relative_url }}" style="color: inherit">News</a>
+      </h2>
+      {% include news.liquid limit=true %}
+    {% endif %}
+
+    <!-- Latest posts -->
+    {% if page.latest_posts and page.latest_posts.enabled %}
+      <h2>
+        <a href="{{ '/blog/' | relative_url }}" style="color: inherit">latest posts</a>
+      </h2>
+      {% include latest_posts.liquid %}
+    {% endif %}
+
+    <!-- Selected papers -->
+    {% if page.selected_papers %}
+      <h2>
+        <a href="{{ '/publications/' | relative_url }}" style="color: inherit">Publications</a>
+      </h2>
+      {% include selected_papers.liquid %}
+      <p class="more-publications">
+        <a href="{{ '/publications/' | relative_url }}">More publications &rarr;</a>
+      </p>
+    {% endif %}
+
+    {% if site.contact_note %}
+      <div class="contact-note">{{ site.contact_note }}</div>
+    {% endif %}
+
+    {% if site.newsletter and site.newsletter.enabled and site.footer_fixed %}
+      {% if site.plugins contains 'al_newsletter' %}
+        {% include plugins/al_newsletter_form_center_margin.liquid %}
+      {% else %}
+        {% include newsletter.liquid center=true %}
+      {% endif %}
+    {% endif %}
+  </article>
+</div>
