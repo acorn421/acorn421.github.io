@@ -16,9 +16,9 @@ footer_text: >
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
 keywords: security, fuzzing, vulnerability discovery, automated program repair, LLM, cyber reasoning system, AIxCC, Team Atlanta, Youngjoon Kim, Georgia Tech # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
-icon: 🌰 # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
+icon: favicons/favicon.ico # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
-url: https://acorn421.github.io # the base hostname & protocol for your site
+url: https://youngjoon.kim # the base hostname & protocol for your site
 baseurl: # the subpath of your site, e.g. /blog/. Leave blank for root
 last_updated: false # set to true if you want to display last updated in the footer
 impressum_path: # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
@@ -122,7 +122,7 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: acorn421's blog # blog_name will be displayed in your blog page
+blog_name: Youngjoon Kim # blog_name will be displayed in your blog page
 blog_description: notes on security research, fuzzing, and LLMs
 permalink: /blog/:year/:title/
 lsi: false # produce an index for related posts
