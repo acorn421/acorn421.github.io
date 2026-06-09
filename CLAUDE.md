@@ -66,3 +66,41 @@ bundle exec al-folio upgrade overrides diff <path>    # then `overrides accept <
 ## CI gates and the style contract
 
 `npm run lint:style-contract` (`test/style_contract.js`) is the automated enforcement of the thin-starter boundary, and it will fail CI if you cross it: the starter must **not** define `build:css`/`build:tailwind` npm scripts, must **not** own `_includes`/`_layouts`/`_sass`/`_scripts`/`assets/tailwind`/`tailwind.config.js`/icon-font artifacts, must keep `theme: al_folio_core` and the required plugins in `_config.yml`, and must keep the `third_party_libraries` SRI pins and `al_math` Gemfile pin. Other gates: `unit-tests.yml` (style contract + the five integration scripts), `visual-regression.yml` (Playwright chromium+webkit, diffs candidate against a v0.16.3 baseline served on :4100 via `BASELINE_URL`), `upgrade-check.yml` (`al-folio upgrade audit`), `prettier.yml`. Prettier uses `@shopify/prettier-plugin-liquid` with `printWidth: 150`; run `npm run lint:prettier` before pushing.
+
+## Site conventions (acorn421's personal fork)
+
+This is a **personalized deployment**, not the upstream starter. The thin-starter
+boundary / `style_contract` gate is upstream's concern; here we deliberately keep a few
+local gem overrides for personalization. Follow these conventions:
+
+### Writing / content
+- **Never use an em-dash (`—`) anywhere** — in page content, news, data files, or commit
+  messages. Use a comma, parentheses, a colon, or "and" instead. (En-dashes `–` in date
+  ranges like "Jan. 2021 – Sep. 2022" are fine.)
+- News items show **month + year only** (no day); enforced by the local
+  `_includes/news.liquid` date format `%b %Y`.
+
+### Design
+- **Always design mobile-first / responsive.** Every layout change must be verified at a
+  narrow viewport (~390px) as well as desktop. Add `@media (max-width: 576px)` rules as needed.
+- Theme: **default dark mode**, **Steel Navy** accent (`#2b4c7e` light / `#5b8dd9` dark),
+  softer dark background (`#26282c`), **Inter** font. All set in the local
+  `_layouts/default.liquid` (script + `<style>` injected around the gem's `head.liquid`).
+
+### Intentional local gem overrides (do not "fix" back into the gem)
+- `_layouts/default.liquid` — default-dark script, Inter font, accent + soft-gray-bg CSS, larger navbar.
+- `_layouts/about.liquid` — two-column profile (photo + small social icons on the left,
+  overview on the right; photo first on mobile), centered enlarged name + subtitle,
+  homepage "Publications" section with a "More publications →" link.
+- `_includes/news.liquid` — month-only news dates.
+- `_pages/publications.md` — type-grouped sections (Conference / Journal / Preprint) with
+  **CV-matching numbering**: labels are `[C1..]`, `[J1..]`, `[P1..]` where the oldest paper
+  is #1 (so newest-first display counts down). Keep these in sync with the CV's C/J/P numbers.
+
+### Assets
+- `assets/pdf/cv_kim.pdf` is a copy of `refer/youngjoon_kim/cv/cv_detailed.pdf`; update it
+  from there (and it is cache-busted via the `/cv/` redirect page).
+
+### Commits
+- One-line conventional-commit messages. **No AI attribution** (no `Co-Authored-By: Claude`,
+  no mention of AI assistants).
