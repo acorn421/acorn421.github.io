@@ -1,19 +1,31 @@
+# Venue badge colors are grouped by category:
+#   Security venues -> red (#aa1d22)
+#   AI/ML venues    -> blue (#21568b)
+#   Neutral (journals / preprints) -> gray (#6c757d)
+
+# --- Security ---
 "SEC":
-  url: https://www.usenix.org/conference/usenixsecurity25
   color: "#aa1d22"
 
 "WOOT":
-  url: https://www.usenix.org/conference/woot26
-  color: "#e07b00"
-
-"arXiv":
-  url: https://arxiv.org/
-  color: "#b31b1b"
-
-"ICLR":
-  url: https://iclr.cc/
-  color: "#21568b"
+  color: "#aa1d22"
 
 "RAID":
-  url: https://raid2023.org/
-  color: "#9f0000"
+  color: "#aa1d22"
+
+# --- AI / ML ---
+"ICLR":
+  color: "#21568b"
+
+"PRL":
+  color: "#21568b"
+
+# --- Neutral (journals / preprints) ---
+"IEEE Access":
+  color: "#6c757d"
+
+"Electronics":
+  color: "#6c757d"
+
+"arXiv":
+  color: "#6c757d"
