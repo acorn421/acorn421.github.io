@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="{{ site.lang }}">
+  <!-- Head -->
+  <head>
+    {% if page.redirect %}
+      {% if page.redirect == true %}
+        {% assign redirect = site.baseurl | append: '/' %}
+      {% elsif page.redirect contains '://' %}
+        {% assign redirect = page.redirect %}
+      {% else %}
+        {% assign redirect = page.redirect | relative_url %}
+      {% endif %}
+      <meta http-equiv="refresh" content="3; url={{ redirect }}">
+    {% endif %}
+
+    <!-- Default to dark mode on first visit (user can still toggle; choice persists) -->
+    <script>
+      (function () {
+        try {
+          var t = localStorage.getItem("theme");
+          if (t !== "dark" && t !== "light" && t !== "system") {
+            localStorage.setItem("theme", "dark");
+          }
+        } catch (e) {}
+      })();
+    </script>
+
+    {% include head.liquid %}
+
+    <!-- Custom typography: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,300..800;1,14..32,300..700&display=swap"
+      rel="stylesheet"
+    >
+
+    <!-- Custom theme overrides (loaded after main.css so these win) -->
+    <style>
+      :root {
+        --site-font: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      }
+      body,
+      .post-title,
+      .navbar,
+      .navbar .nav-link,
+      .desc,
+      h1, h2, h3, h4, h5, h6 {
+        font-family: var(--site-font);
+      }
+      /* Larger top navbar menu */
+      #navbar .navbar-nav .nav-item .nav-link {
+        font-size: 1.35rem;
+      }
+      #navbar .navbar-brand {
+        font-size: 1.6rem;
+      }
+      /* Steel Navy accent (light) */
+      html[data-theme="light"] {
+        --global-theme-color: #2b4c7e;
+        --global-hover-color: #2b4c7e;
+      }
+      /* Steel Navy accent (dark) + softer, less-deep gray background */
+      html[data-theme="dark"] {
+        --global-theme-color: #5b8dd9;
+        --global-hover-color: #5b8dd9;
+        --global-bg-color: #26282c;
+        --global-card-bg-color: #303338;
+        --global-code-bg-color: #2f3338;
+        --global-divider-color: #3c3f45;
+      }
+    </style>
+  </head>
+
+  <!-- Body -->
+  <body class="{% if site.navbar_fixed %}fixed-top-nav{% endif %} {% unless site.footer_fixed %}sticky-bottom-footer{% endunless %}">
+    <!-- Header -->
+    {% include header.liquid %}
+
+    <!-- Content -->
+    <div class="container mt-5" role="main">
+      {% if page.toc and page.toc.sidebar %}
+        {% assign toc_collapse = page.toc.collapse | default: 'expanded' %}
+        {% assign toc_collapse_depth = page.toc.collapse_depth | default: '' %}
+        {% if page.toc.sidebar == 'right' %}
+          <div class="row">
+            <!-- main content area -->
+            <div class="col-sm-9">{{ content }}</div>
+            <!-- sidebar, which will move to the top on a small screen -->
+            <div class="col-sm-3">
+              <nav
+                id="toc-sidebar"
+                class="sticky-top toc toc-sidebar"
+                aria-label="Table of contents"
+                data-toc-collapse="{{ toc_collapse }}"
+                data-toc-collapse-depth="{{ toc_collapse_depth }}"
+              ></nav>
+            </div>
+          </div>
+        {% else %}
+          <div class="row">
+            <!-- sidebar, which will move to the top on a small screen -->
+            <div class="col-sm-3">
+              <nav
+                id="toc-sidebar"
+                class="sticky-top toc toc-sidebar"
+                aria-label="Table of contents"
+                data-toc-collapse="{{ toc_collapse }}"
+                data-toc-collapse-depth="{{ toc_collapse_depth }}"
+              ></nav>
+            </div>
+            <!-- main content area -->
+            <div class="col-sm-9">{{ content }}</div>
+          </div>
+        {% endif %}
+      {% else %}
+        {{ content }}
+      {% endif %}
+    </div>
+
+    <!-- Footer -->
+    {% include footer.liquid %}
+
+    <!-- JavaScripts -->
+    {% include scripts.liquid %}
+  </body>
+</html>
