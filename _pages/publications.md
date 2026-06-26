@@ -20,7 +20,7 @@ nav_order: 2
      In the CV the oldest paper is #1, so the labels count DOWN from the top
      (newest first). counter-reset is set to (count + 1) per section. */
   .pub-conf ol.bibliography {
-    counter-reset: pub 6; /* number of conference papers + 1 */
+    counter-reset: pub 7; /* number of conference papers + 1 */
   }
   .pub-jour ol.bibliography {
     counter-reset: pub 4; /* number of journal articles + 1 */
@@ -46,9 +46,44 @@ nav_order: 2
     font-weight: bolder;
     margin-right: 0.2rem;
   }
+
+  /* Venue color legend (top of page). Keep colors in sync with _data/venues.yml. */
+  .pub-legend {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.4rem 1.2rem;
+    margin: 0 0 1.6rem;
+    font-size: 0.9rem;
+  }
+  .pub-legend .legend-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    white-space: nowrap;
+  }
+  .pub-legend .legend-swatch {
+    display: inline-block;
+    flex: 0 0 auto;
+    width: 1.6rem;
+    height: 1rem;
+    border-radius: 0.25rem;
+  }
+  @media (max-width: 576px) {
+    .pub-legend {
+      gap: 0.35rem 0.9rem;
+      font-size: 0.82rem;
+    }
+  }
 </style>
 
 <div class="publications">
+
+<div class="pub-legend" aria-label="Venue category color legend">
+  <span class="legend-item"><span class="legend-swatch" style="background-color: #aa1d22"></span>Security</span>
+  <span class="legend-item"><span class="legend-swatch" style="background-color: #1f7a3d"></span>Software Engineering</span>
+  <span class="legend-item"><span class="legend-swatch" style="background-color: #21568b"></span>Machine Learning</span>
+</div>
 
 <div class="pub-conf">
 <h2 class="bibliography">Conference Papers</h2>

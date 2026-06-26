@@ -1,7 +1,9 @@
 # Venue badge colors are grouped by category:
-#   Security venues -> red (#aa1d22)
-#   AI/ML venues    -> blue (#21568b)
+#   Security venues          -> red   (#aa1d22)
+#   Software Engineering (SE)-> green (#1f7a3d)
+#   AI/ML venues             -> blue  (#21568b)
 #   Neutral (journals / preprints) -> gray (#6c757d)
+# Keep the legend at the top of _pages/publications.md in sync with these colors.
 
 # --- Security ---
 "SEC":
@@ -12,6 +14,10 @@
 
 "RAID":
   color: "#aa1d22"
+
+# --- Software Engineering ---
+"ASE":
+  color: "#1f7a3d"
 
 # --- AI / ML ---
 "ICLR":
