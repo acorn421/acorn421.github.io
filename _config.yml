@@ -229,6 +229,7 @@ exclude:
   - gems/
   - migrations/
   - vendor
+  - refer/ # private submodule (CV sources, applications, etc.) - never publish
 keep_files:
   - CNAME
   - .nojekyll
